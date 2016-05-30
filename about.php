@@ -5,12 +5,12 @@
 // Created 2016-05-29
 
 global $current_page;
-$current_page = 'Home';
+$current_page = 'About';
 require_once("header.php");
 require_once("navbar.php");
 require_once("parsedown/Parsedown.php");
 
-$md_content = file_get_contents("content/index.md");
+$md_content = file_get_contents("content/about.md");
 
 $Parsedown = new Parsedown();
 echo "<div class='container'>";
