@@ -18,7 +18,7 @@ foreach ($files_clean as $fname) {
 	echo "<li><a href='latest?fname='".$fname.">";
 	$parts = explode("+", $fname);
 	$nice_date = date_format(date_create($parts[0]), "d M Y");
-	$nice_name = str_replace(' ', '_', $parts[1]);
+	$nice_name = str_replace('_', ' ', $parts[1]);
 	echo $nice_date." ".$nice_name."</a></li>\n";
 }
 ?>
